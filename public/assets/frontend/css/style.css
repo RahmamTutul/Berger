@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&family=Rubik:wght@300&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Outfit", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: "Rubik", sans-serif;
+}
+.navbar .navbar-nav .nav-link {
+    font-size: 1.1em;
+    position: relative;
+}
+.navbar .navbar-nav .nav-link::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #776c88;
+    color: transparent;
+    width: 0%;
+    content: ".";
+    height: 5px;
+}
+.navbar .navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.logo {
+    height: 75px;
+    width: 110px;
+    background-color: #fff;
+    margin-left: 50px;
+    justify-content: center;
+}
+.logo img {
+    height: 60px;
+    width: 80px;
+}
+@media screen and (max-width: 960px) {
+    .logo {
+        height: 50px;
+        width: 80px;
+        margin-top: 0;
+        background-color: #fff;
+        margin-left: 50px;
+        justify-content: center;
+    }
+    .logo img {
+        margin-left: 7px;
+        height: 43px;
+        width: 60px;
+    }
+}
+@media only screen and (min-width: 960px) {
+    .navbar .navbar-nav .nav-link {
+        padding: 1.6rem 0.7em;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .navbar .navbar-brand {
+        padding: 0 0.7em;
+    }
+}
+.custom-navbar {
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #493a60;
+}
+
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+    .navbar .dropdown-item:hover {
+        background-color: #00adef;
+    }
+    .navbar .dropdown-item {
+        padding: 10px;
+    }
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+/* Navbar end  */
+#about {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+#about h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+#about p {
+    font-weight: 600;
+}
+
+/* Gallery start  */
+.wrap {
+    overflow: hidden;
+}
+.box:nth-child(1) {
+    float: left;
+    position: relative;
+    width: 50%;
+    padding-bottom: 25%;
+}
+.box:nth-child(2) {
+    float: left;
+    position: relative;
+    width: 25%;
+    padding-bottom: 25%;
+}
+.box:nth-child(3) {
+    float: left;
+    position: relative;
+    width: 25%;
+    padding-bottom: 25%;
+}
+.box:nth-child(4) {
+    float: left;
+    position: relative;
+    width: 40%;
+    padding-bottom: 25%;
+}
+.box:nth-child(5) {
+    float: left;
+    position: relative;
+    width: 60%;
+    padding-bottom: 25%;
+}
+.boxInner {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    overflow: hidden;
+}
+@media screen and (max-width: 960px) {
+    .box {
+        float: left;
+        position: relative;
+        width: 100% !important;
+        height: 300px;
+        padding-bottom: 25%;
+    }
+}
+.boxInner img {
+    width: 100%;
+    height: 100%;
+}
+.titleBox {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    background: rgba(2, 2, 2, 0.5);
+    color: #fff;
+    padding: 15px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.titleBox a {
+    text-decoration: none;
+}
+section.no-touch .boxInner:hover .titleBox,
+section.touch .boxInner.touchFocus .titleBox {
+    margin-bottom: 0;
+    padding: 20px;
+    color: #00adef;
+    transition: all 0.3s ease-out;
+}
+.hero {
+    display: block;
+    box-sizing: border-box;
+    height: 700px;
+    background-color: #bc5ab0;
+    clip-path: ellipse(90% 100% at 18.4% 0%);
+}
+@media screen and (max-width: 960px) {
+    .hero img {
+        width: 60% !important;
+        margin-top: 40px;
+    }
+    .hero form {
+        width: 60%;
+    }
+}
+.form-label {
+    color: #fff;
+    font-weight: 600;
+}
+.card-item:hover {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.card-title a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
+.card-title a:hover {
+    font-weight: 600;
+    color: #00adef;
+}
+.btn-primary {
+    margin: auto;
+    color: #fff !important;
+    font-weight: 600;
+}
+.show-more {
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* Footer start  */
+
+.footer {
+    padding: 7rem 0;
+    background: #2c1238;
+    color: #fff;
+}
+.footer .footersite-logo {
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    display: block;
+}
+.footer h3 {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.footer .links li {
+    margin-bottom: 10px;
+}
+.footer .links li a {
+    color: #999;
+}
+.footer .links li a:hover {
+    color: #fff;
+}
+.footer .link-menu li {
+    display: inline-block;
+}
+.footer .link-menu li a {
+    color: #fff;
+    display: inline-block;
+    padding: 10px;
+}
+.footer .link-menu.nav-left li:first-child a {
+    padding-left: 0;
+}
+.footer .link-menu.nav-right li:last-child a {
+    padding-left: 0;
+}
+.footer .social li {
+    display: inline-block;
+}
+.footer .social li a {
+    display: inline-block;
+    padding: 10px;
+    color: #ccc;
+}
+.footer .social li:last-child a {
+    padding-right: 0;
+}
+.footer .line {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+/* Pagination  */
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff !important  ;
+    background-color: #00acd6 !important;
+    border-color: #00acd6 !important;
+    border-radius: 50%;
+    padding: 6px 12px;
+}
+.page-link {
+    z-index: 3;
+    color: #00acd6 !important;
+    background-color: #fff;
+    border-color: #007bff;
+    border-radius: 50%;
+    padding: 6px 12px !important;
+}
+.page-item:first-child .page-link {
+    border-radius: 30% !important;
+}
+.page-item:last-child .page-link {
+    border-radius: 30% !important;
+}
+.pagination li {
+    padding: 3px;
+}
+.disabled .page-link {
+    color: #212529 !important;
+    opacity: 0.5 !important;
+}
