@@ -67,7 +67,7 @@
                   </div>
                    <div class="text-center mt-4 font-weight-light">
                     Register With :- &nbsp;&nbsp;&nbsp;
-                    <a  href="#"><i class="fab fa-facebook-square"></i> Facebook</a> &nbsp; || &nbsp;
+                    <a  href="{{ url('/login/facebook') }}"><i class="fab fa-facebook-square"></i> Facebook</a> &nbsp; || &nbsp;
                     <a href="#"><i class="fab fa-google"></i> Google</a>
                    </div>
                 </form>

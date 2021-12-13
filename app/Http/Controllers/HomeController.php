@@ -2,16 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Laravel\Socialite\Facades\Socialite;
 
 class HomeController extends Controller
 {
-    public function loginFacebook(){
-        return Socialite::driver('facebook')->redirect();
-    }
-    public function loginFacebookCallback(){
-        $user = Socialite::driver('github')->user();
-    }
+   
     /**
      * Create a new controller instance.
      *
