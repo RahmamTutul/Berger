@@ -26,7 +26,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('login/facebook', [App\Http\Controllers\HomeController::class, 'loginFacebook']);
+Route::get('login/facebook/callback', [App\Http\Controllers\HomeController::class, 'loginFacebookCallback']);
 
 Route::prefix('/diary')->group(function () {
        Route::get('index',[DiaryController::class,'index']);

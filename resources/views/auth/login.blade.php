@@ -10,7 +10,8 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <link rel="stylesheet" href="{{ asset('assets/backend/css/style.css') }}">
-  <link rel="stylesheet" href="{{ asset('assets/backend/css/toastr.css') }}"> 
+  <link rel="stylesheet" href="{{ asset('assets/backend/css/toastr.css') }}">
+  <link rel="stylesheet"href="{{ asset('assets/frontend/css/fronawesome.css') }}"/>
 </head>
 
 <body>
@@ -44,7 +45,12 @@
                  <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">{{ __('Login') }}</button>
                 </div>
                 <div class="text-center mt-4 font-weight-light">
-                  Don't have an account? <a href="{{ url('admin/register') }}" class="text-primary">Create</a>
+                  Dont have an account? <a href="{{ url('admin/register') }}" class="text-primary">Create</a>
+                </div>
+                <div class="text-center mt-4 font-weight-light">
+                Login With :- &nbsp;&nbsp;&nbsp;
+                <a  href="#"><i class="fab fa-facebook-square"></i> Facebook</a> &nbsp; || &nbsp;
+                <a href="#"><i class="fab fa-google"></i> Google</a>
                 </div>
               </form>
             </div>
@@ -53,7 +59,8 @@
       </div>
     </div>
   </div>
-   <script src="{{ asset('assets/backend/vendors/base/vendor.bundle.base.js') }}"></script>
+  <script src="{{ asset('assets/frontend/js/fontawesome.js') }}"></script>
+  <script src="{{ asset('assets/backend/vendors/base/vendor.bundle.base.js') }}"></script>
   <script src="{{asset('assets/backend/js/toastr.js')}}"></script>
   {!! Toastr::message() !!}
 </body>

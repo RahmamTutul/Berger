@@ -8,7 +8,6 @@
         @else
             <li class="page-item"><a class="page-link" href="{{ $paginator->previousPageUrl() }}">Previous</a></li>
         @endif
-      
         @foreach ($elements as $element)
             @if (is_string($element))
                 <li class="page-item disabled">{{ $element }}</li>
